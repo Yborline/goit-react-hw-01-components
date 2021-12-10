@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'
+import s from './task2.module.css'
 
 const Statistic = ({key, label, percentage})=>{
   return (
    
-    <div>
+    <div className={s.container}>
 
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
+      <span className={s.label}>{label}</span>
+      <span className={s.percentage}>{percentage}</span>
       </div>
 )
 }

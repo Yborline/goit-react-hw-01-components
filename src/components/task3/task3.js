@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
+import s from './task3.module.css'
+
 
 const CardFriend = ({avatar,name,isOnline}) => {
 
     return (
-    <div>
+    <div className=''>
         {isOnline &&
-<span className="status">online</span>}
+<span className={s.status}>online</span>}
 <img className="avatar" src={avatar} alt="User avatar" width="48" />
-<p className="name">{name}</p>
+<p className={s.name}>{name}</p>
 </div>
 )
 
