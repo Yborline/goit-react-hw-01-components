@@ -2,7 +2,7 @@ import CardFriend from './task3'
 import PropTypes from 'prop-types'
 import s from './task3.module.css'
 
-const CardList = ({ friends }) => {
+const FriendList = ({ friends }) => {
     return (
 
 
@@ -23,7 +23,7 @@ const CardList = ({ friends }) => {
 }
  
 
-CardList.propTypes = {
+FriendList.propTypes = {
     friend:PropTypes.arrayOf(
         PropTypes.shape({
             id:PropTypes.string.isRequired,
@@ -34,4 +34,4 @@ CardList.propTypes = {
 
 
 
-export default CardList
+export default FriendList

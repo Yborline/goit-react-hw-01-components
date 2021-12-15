@@ -1,7 +1,10 @@
+// import PropTypes from 'prop-types'
 import s from "./task4.module.css"
 
 
-const Table = ({items}) => {
+
+
+const TransactionHistory = ({items}) => {
 return (
 
 <div className={s.transTable}>
@@ -30,4 +33,6 @@ return (
 )
 }
 
-export default Table
+
+
+export default TransactionHistory

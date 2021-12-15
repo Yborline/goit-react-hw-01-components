@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import s from './task1.module.css';
 
-const Card  = ({name, tag , location , avatar , followers , views , likes}) =>{
+const Profile = ({username, tag , location , avatar , stats}) =>{
 return (
   <div className={s.profile}>
   <div className={s.description}>
     <img
       src={avatar}
-      alt={name}
+      alt={username}
       className={s.avatar}
     />
-    <p className="name">{name}</p>
+    <p className="name">{username}</p>
     <p className="tag">{tag}</p>
     <p className="location">{location}</p>
   </div>
@@ -18,22 +18,22 @@ return (
   <ul className={s.stats}>
     <li>
       <span className="label">Followers</span>
-      <span className="quantity">{followers}</span>
+      <span className="quantity">{stats.followers}</span>
     </li>
     <li>
       <span className="label">Views</span>
-      <span className="quantity">{views}</span>
+      <span className="quantity">{stats.views}</span>
     </li>
     <li>
       <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
+      <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
 </div>)
 }
 
 
-Card.propTypes = {
+Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
@@ -45,5 +45,5 @@ Card.propTypes = {
 
 }
 
-export default Card;
+export default Profile;
 

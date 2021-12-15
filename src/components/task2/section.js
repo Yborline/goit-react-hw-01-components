@@ -1,4 +1,4 @@
-import Statistic from './task2'
+import Сell from './task2'
 import PropTypes from 'prop-types';
 import s from './section.module.css'
 
@@ -7,7 +7,7 @@ const color = item => {
   return `${colorArray[Number(item.id.replace(/[^0-9]/g, '')) % 5]}`;
 };
 
-const  Task2 =  ({items,title}) =>
+const  Statistics =  ({items,title}) =>
 {
   return(
     
@@ -16,7 +16,7 @@ const  Task2 =  ({items,title}) =>
             <ul className={s.list}>
             {items.map(item=>(
               <li className={s.elem} style={{ backgroundColor: color(item) }} key = {item.id}>
-    <Statistic 
+    <Сell 
       label = {item.label}
       percentage = {item.percentage}
     />
@@ -28,7 +28,7 @@ const  Task2 =  ({items,title}) =>
           )
 }
 
-Task2.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
 items: PropTypes.arrayOf(
   PropTypes.shape({
@@ -39,4 +39,4 @@ items: PropTypes.arrayOf(
 }
 
 
-export default Task2;
+export default Statistics;
