@@ -8,7 +8,7 @@ const TransactionHistory = ({items}) => {
 return (
 
 <div className={s.transTable}>
-<table class={s.table}>
+<table className={s.table}>
   <thead>
     <tr>
       <th className={s.th}>Type</th>
