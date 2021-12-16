@@ -1,6 +1,6 @@
-import CardFriend from './task3'
+import CardFriend from './CardFriend'
 import PropTypes from 'prop-types'
-import s from './task3.module.css'
+import s from './FriendList.module.css'
 
 const FriendList = ({ friends }) => {
     return (

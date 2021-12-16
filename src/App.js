@@ -1,16 +1,16 @@
-import Profile from './components/task1/task1'
+import Profile from './components/Profile/Profile.js'
 import user from '../src/listJSON/task1.json'
 // import Task2 from './task2/task2'
 
 import data from '../src/listJSON/data.json'
-import Statistics from './components/task2/section'
+import Statistics from './components/Statistics/Statistics'
 
-import FriendList from './components/task3/list3'
+import FriendList from './components/FriendList/FriendList'
 import friends from './listJSON/friend.json'
 // import data from '/путь/к/data.json';
 
 import transactions from './listJSON/array4.json'
-import TransactionHistory  from './components/task4/task4'
+import TransactionHistory  from './components/TransactionHistory/TransactionHistory'
 import { Fragment } from 'react'
 
 
