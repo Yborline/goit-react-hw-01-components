@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import s from './task2.module.css'
+import s from './Cell.module.css'
 
 const Сell = ({key, label, percentage})=>{
   return (

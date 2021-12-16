@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import s from './task3.module.css'
+import s from './FriendList.module.css'
 
 
 const CardFriend = ({avatar,name,isOnline}) => {
